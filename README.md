@@ -1,3 +1,3 @@
 # WhiteSky
 
-Proiect demo TWeb despre ski.
+Manoli Bogdan Proiect Ski
