@@ -1,1 +1,137 @@
-<!doctype html><html lang='ro'><head><meta charset='utf-8'><title>Contact</title><link rel='stylesheet' href='assets/css/styles.css'></head><body><h1>Contact</h1><script src='assets/js/main.js' defer></script></body></html>
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WhiteSky • Contact</title>
+  <meta name="description" content="Formular de contact pentru întrebări, sugestii sau feedback." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Sari la conținut</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="WhiteSky — acasă">
+        <svg class="icon icon--brand" aria-hidden="true" focusable="false">
+          <use href="assets/svg/icons.svg#icon-snowflake"></use>
+        </svg>
+        <span class="brand__text">
+          <span class="brand__name">WhiteSky</span>
+          <span class="brand__tag">Ski guide</span>
+        </span>
+      </a>
+
+      <nav class="nav__links" aria-label="Navigație principală">
+        <a href="index.html">Acasă</a>
+        <a href="resorts.html">Stațiuni</a>
+        <a href="gear.html">Echipament</a>
+        <a href="tips.html">Sfaturi</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a class="nav__favorites" href="favorites.html">
+          Favorite
+          <span class="badge badge--pill" aria-label="Număr de favorite" data-favorites-count>0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="section">
+    <div class="container">
+      <header class="page-header">
+        <h1>Contact</h1>
+        <p class="muted">
+          Ai o întrebare, o sugestie sau vrei să ne trimiți feedback? Completează formularul de mai jos.
+        </p>
+      </header>
+
+      <section class="grid grid--detail">
+        <article class="card">
+          <div class="card__body">
+            <h2>Trimite un mesaj</h2>
+
+            <form id="contact-form" class="form" action="#" method="post">
+              <div class="field">
+                <label for="name">Nume</label>
+                <input id="name" name="name" type="text" placeholder="Ex: Ana" autocomplete="name" />
+              </div>
+
+              <div class="field">
+                <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+                <input id="email" name="email" type="email" placeholder="nume@exemplu.com" autocomplete="email" required />
+              </div>
+
+              <div class="field">
+                <label for="topic">Subiect</label>
+                <select id="topic" name="topic">
+                  <option value="general">General</option>
+                  <option value="resorts">Stațiuni</option>
+                  <option value="gear">Echipament</option>
+                  <option value="feedback">Feedback</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="message">Mesaj <span class="req" aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" rows="6" placeholder="Scrie mesajul tău..." required></textarea>
+              </div>
+
+              <div id="form-status" class="form__status" role="status" aria-live="polite"></div>
+
+              <button class="btn btn--primary" type="submit">Trimite</button>
+            </form>
+          </div>
+        </article>
+
+        <aside class="card card--soft">
+          <div class="card__body">
+            <h2>Informații</h2>
+            <ul class="list">
+              <li>WhiteSky — ghid de ski</li>
+              <li>Stațiuni, echipament și sfaturi</li>
+              <li>Disponibil online</li>
+            </ul>
+            <p class="muted small">
+              Mesajele sunt procesate local în scop demonstrativ.
+            </p>
+          </div>
+        </aside>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <svg class="icon" aria-hidden="true" focusable="false">
+            <use href="assets/svg/icons.svg#icon-snowflake"></use>
+          </svg>
+          <strong>WhiteSky</strong>
+        </div>
+        <p class="muted small">
+          Pagina de contact WhiteSky.
+        </p>
+      </div>
+
+      <nav class="footer__links" aria-label="Linkuri footer">
+        <a href="index.html">Acasă</a>
+        <a href="tips.html">Sfaturi</a>
+        <a href="favorites.html">Favorite</a>
+      </nav>
+
+      <p class="footer__meta small muted">
+        © <span id="year">2026</span> WhiteSky
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

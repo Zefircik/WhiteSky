@@ -1,1 +1,118 @@
-<!doctype html><html lang='ro'><head><meta charset='utf-8'><title>Stațiune</title><link rel='stylesheet' href='assets/css/styles.css'></head><body><h1>Detalii stațiune</h1><script src='assets/js/main.js' defer></script></body></html>
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WhiteSky • Detalii stațiune</title>
+  <meta name="description" content="Detalii despre o stațiune de ski: altitudine, pârtii, dificultate și informații generale." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Sari la conținut</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="WhiteSky — acasă">
+        <svg class="icon icon--brand" aria-hidden="true" focusable="false">
+          <use href="assets/svg/icons.svg#icon-snowflake"></use>
+        </svg>
+        <span class="brand__text">
+          <span class="brand__name">WhiteSky</span>
+          <span class="brand__tag">Ski guide</span>
+        </span>
+      </a>
+
+      <nav class="nav__links" aria-label="Navigație principală">
+        <a href="index.html">Acasă</a>
+        <a href="resorts.html">Stațiuni</a>
+        <a href="gear.html">Echipament</a>
+        <a href="tips.html">Sfaturi</a>
+        <a href="contact.html">Contact</a>
+        <a class="nav__favorites" href="favorites.html">
+          Favorite
+          <span class="badge badge--pill" aria-label="Număr de favorite" data-favorites-count>0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="section">
+    <div class="container">
+      <a class="link-back" href="resorts.html">← Înapoi la stațiuni</a>
+
+      <header class="page-header">
+        <h1>Detalii stațiune</h1>
+        <p class="muted">
+          Informații generale despre stațiunea selectată.
+        </p>
+      </header>
+
+      <section class="grid grid--detail">
+        <article class="card" id="resort-detail">
+          <div class="card__body">
+            <h2 class="card__title">Selectează o stațiune</h2>
+            <p class="muted">
+              Accesează catalogul și alege o stațiune pentru a vedea detaliile.
+            </p>
+
+            <p>
+              Pe această pagină vei găsi informații precum altitudinea, lungimea pârtiilor,
+              nivelul de dificultate, ratingul și o scurtă descriere.
+            </p>
+
+            <div class="card__actions">
+              <a class="btn btn--primary" href="resorts.html">Mergi la catalog</a>
+              <button class="btn btn--ghost" type="button" aria-label="Adaugă la favorite">☆ Favorite</button>
+            </div>
+          </div>
+        </article>
+
+        <aside class="card card--soft" aria-label="Informații utile">
+          <div class="card__body">
+            <h3>Ce poți face aici</h3>
+            <ul class="list">
+              <li>Vizualizezi detalii despre stațiune</li>
+              <li>Compari nivelul de dificultate</li>
+              <li>Salvezi stațiunea la favorite</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <svg class="icon" aria-hidden="true" focusable="false">
+            <use href="assets/svg/icons.svg#icon-snowflake"></use>
+          </svg>
+          <strong>WhiteSky</strong>
+        </div>
+        <p class="muted small">
+          Ghid de ski: stațiuni, echipament și sfaturi.
+        </p>
+      </div>
+
+      <nav class="footer__links" aria-label="Linkuri footer">
+        <a href="index.html">Acasă</a>
+        <a href="resorts.html">Stațiuni</a>
+        <a href="favorites.html">Favorite</a>
+      </nav>
+
+      <p class="footer__meta small muted">
+        © <span id="year">2026</span> WhiteSky
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

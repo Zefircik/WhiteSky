@@ -1,1 +1,179 @@
-<!doctype html><html lang='ro'><head><meta charset='utf-8'><title>Echipament</title><link rel='stylesheet' href='assets/css/styles.css'></head><body><h1>Echipament</h1><script src='assets/js/main.js' defer></script></body></html>
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WhiteSky • Echipament</title>
+  <meta name="description" content="Ghid de echipament pentru ski, cu recomandări și checklist util." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Sari la conținut</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="WhiteSky — acasă">
+        <svg class="icon icon--brand" aria-hidden="true" focusable="false">
+          <use href="assets/svg/icons.svg#icon-snowflake"></use>
+        </svg>
+        <span class="brand__text">
+          <span class="brand__name">WhiteSky</span>
+          <span class="brand__tag">Ski guide</span>
+        </span>
+      </a>
+
+      <nav class="nav__links" aria-label="Navigație principală">
+        <a href="index.html">Acasă</a>
+        <a href="resorts.html">Stațiuni</a>
+        <a href="gear.html" aria-current="page">Echipament</a>
+        <a href="tips.html">Sfaturi</a>
+        <a href="contact.html">Contact</a>
+        <a class="nav__favorites" href="favorites.html">
+          Favorite
+          <span class="badge badge--pill" aria-label="Număr de favorite" data-favorites-count>0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="section">
+    <div class="container">
+      <header class="page-header">
+        <h1>Ghid de echipament</h1>
+        <p class="muted">
+          Echipamentul potrivit îți oferă siguranță, confort și control pe pârtie.
+        </p>
+      </header>
+
+      <section aria-label="Echipament recomandat">
+        <div class="grid grid--cards" id="gear-grid">
+          <article class="card">
+            <img class="card__img" src="assets/img/gear-1.jpg" alt="Cască de ski" width="800" height="500" loading="lazy" />
+            <div class="card__body">
+              <div class="card__top">
+                <h2 class="card__title">Cască</h2>
+                <span class="badge badge--easy">Esențial</span>
+              </div>
+              <p class="muted small">Siguranță • Confort</p>
+              <p class="small">Alege mărimea corectă și un model bine ventilat.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card__img" src="assets/img/gear-2.jpg" alt="Ochelari (goggles) pentru ski" width="800" height="500" loading="lazy" />
+            <div class="card__body">
+              <div class="card__top">
+                <h2 class="card__title">Goggles</h2>
+                <span class="badge badge--easy">Esențial</span>
+              </div>
+              <p class="muted small">Vizibilitate • Protecție UV</p>
+              <p class="small">Lentile diferite pentru soare puternic sau ceață.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card__img" src="assets/img/gear-3.jpg" alt="Clăpari de ski" width="800" height="500" loading="lazy" />
+            <div class="card__body">
+              <div class="card__top">
+                <h2 class="card__title">Clăpari</h2>
+                <span class="badge badge--mid">Control</span>
+              </div>
+              <p class="muted small">Stabilitate • Precizie</p>
+              <p class="small">Confortul este mai important decât brandul.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card__img" src="assets/img/gear-4.jpg" alt="Geacă de ski" width="800" height="500" loading="lazy" />
+            <div class="card__body">
+              <div class="card__top">
+                <h2 class="card__title">Geacă</h2>
+                <span class="badge badge--mid">Straturi</span>
+              </div>
+              <p class="muted small">Impermeabilitate • Vânt</p>
+              <p class="small">O membrană bună face diferența pe vreme rea.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card__img" src="assets/img/gear-5.jpg" alt="Mănuși de ski" width="800" height="500" loading="lazy" />
+            <div class="card__body">
+              <div class="card__top">
+                <h2 class="card__title">Mănuși</h2>
+                <span class="badge badge--easy">Esențial</span>
+              </div>
+              <p class="muted small">Căldură • Aderență</p>
+              <p class="small">Mănușile impermeabile sunt indispensabile.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card__img" src="assets/img/gear-6.jpg" alt="Base layer pentru ski" width="800" height="500" loading="lazy" />
+            <div class="card__body">
+              <div class="card__top">
+                <h2 class="card__title">Base layer</h2>
+                <span class="badge badge--info">Confort</span>
+              </div>
+              <p class="muted small">Termic • Respirație</p>
+              <p class="small">Materialele tehnice mențin corpul uscat.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section__tight">
+        <div class="card card--soft">
+          <div class="card__body">
+            <h2>Checklist echipament</h2>
+            <p class="muted">
+              Folosește lista de mai jos pentru a nu uita nimic important.
+            </p>
+
+            <ul class="todo">
+              <li><label><input type="checkbox" /> Cască</label></li>
+              <li><label><input type="checkbox" /> Goggles</label></li>
+              <li><label><input type="checkbox" /> Clăpari</label></li>
+              <li><label><input type="checkbox" /> Geacă + pantaloni</label></li>
+              <li><label><input type="checkbox" /> Mănuși + buff</label></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <svg class="icon" aria-hidden="true" focusable="false">
+            <use href="assets/svg/icons.svg#icon-snowflake"></use>
+          </svg>
+          <strong>WhiteSky</strong>
+        </div>
+        <p class="muted small">
+          Ghid de echipament pentru schiori de toate nivelurile.
+        </p>
+      </div>
+
+      <nav class="footer__links" aria-label="Linkuri footer">
+        <a href="index.html">Acasă</a>
+        <a href="resorts.html">Stațiuni</a>
+        <a href="tips.html">Sfaturi</a>
+      </nav>
+
+      <p class="footer__meta small muted">
+        © <span id="year">2026</span> WhiteSky
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,33 +1,195 @@
 <!doctype html>
 <html lang="ro">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WhiteSky • Ski</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WhiteSky • Ski, stațiuni și echipament</title>
+  <meta name="description" content="WhiteSky: un site despre ski — stațiuni, echipament și sfaturi. Proiect universitar TWeb (HTML/CSS/JS, fără backend)." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
+
 <body>
+  <a class="skip-link" href="#main-content">Sari la conținut</a>
+
   <header class="site-header">
-    <h1>WhiteSky</h1>
-    <nav>
-      <a href="index.html">Acasă</a>
-      <a href="resorts.html">Stațiuni</a>
-      <a href="gear.html">Echipament</a>
-      <a href="tips.html">Sfaturi</a>
-      <a href="contact.html">Contact</a>
-      <a href="favorites.html">Favorite</a>
-    </nav>
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="WhiteSky — acasă">
+        <svg class="icon icon--brand" aria-hidden="true" focusable="false">
+          <use href="assets/svg/icons.svg#icon-snowflake"></use>
+        </svg>
+        <span class="brand__text">
+          <span class="brand__name">WhiteSky</span>
+          <span class="brand__tag">Ski guide</span>
+        </span>
+      </a>
+
+      <nav class="nav__links" aria-label="Navigație principală">
+        <a href="index.html" aria-current="page">Acasă</a>
+        <a href="resorts.html">Stațiuni</a>
+        <a href="gear.html">Echipament</a>
+        <a href="tips.html">Sfaturi</a>
+        <a href="contact.html">Contact</a>
+        <a class="nav__favorites" href="favorites.html">
+          Favorite
+          <span class="badge badge--pill" aria-label="Număr de favorite" data-favorites-count>0</span>
+        </a>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <main id="main-content">
     <section class="hero">
-      <h2>Bine ai venit în lumea schiului</h2>
-      <p>demo- Manoli Bogdan</p>
+      <img
+        class="hero__bg"
+        src="assets/img/hero-ski.jpg"
+        alt="Schi pe o pârtie montană, zăpadă proaspătă și cer senin"
+        width="1600"
+        height="900"
+      />
+      <div class="container hero__content">
+        <p class="kicker">Hobby: SKI</p>
+        <h1>Exploră muntele cu încredere.</h1>
+        <p class="lead">
+          WhiteSky este ghidul tău simplu: stațiuni, echipament și sfaturi practice —
+          construit în HTML + CSS + JavaScript (fără backend).
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="resorts.html">Vezi stațiuni</a>
+          <a class="btn btn--ghost" href="gear.html">Checklist echipament</a>
+        </div>
+
+        <ul class="hero__meta" aria-label="Rezumat">
+          <li class="chip">
+            <svg class="icon" aria-hidden="true"><use href="assets/svg/icons.svg#icon-mountain"></use></svg>
+            Cards responsiveTEST
+          </li>
+          <li class="chip">
+            <svg class="icon" aria-hidden="true"><use href="assets/svg/icons.svg#icon-route"></use></svg>
+            Dataset localTEST
+          </li>
+          <li class="chip">
+            <svg class="icon" aria-hidden="true"><use href="assets/svg/icons.svg#icon-snowflake"></use></svg>
+            FavoriteTEST
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <header class="section__header">
+          <h2>De ce ski?</h2>
+          <p class="muted">
+            Un sport complet: energie, tehnică și aer curat. Mai jos sunt 3 motive pe scurt.
+          </p>
+        </header>
+
+        <div class="grid grid--cards">
+          <article class="card">
+            <div class="card__body">
+              <h3>Fitness + echilibru</h3>
+              <p>
+                Lucrezi picioare, core și stabilitatea. Progresul se vede rapid dacă exersezi constant.
+              </p>
+              <span class="badge badge--info">Beneficiu</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__body">
+              <h3>Control și tehnică</h3>
+              <p>
+                Înveți să dozezi viteza, să alegi linia pe pârtie și să anticipezi terenul.
+              </p>
+              <span class="badge badge--info">Skill</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__body">
+              <h3>Relaxare la munte</h3>
+              <p>
+                Zăpadă, panorame, pauze la cabană. Perfect pentru weekend-uri active.
+              </p>
+              <span class="badge badge--info">Lifestyle</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container split">
+        <div>
+          <h2>Echipament esențial (începător)</h2>
+          <p class="muted">
+            Un set minim pentru siguranță și confort pe pârtie.
+          </p>
+
+          <ul class="checklist">
+            <li><span class="checklist__tick" aria-hidden="true">✓</span> Cască + ochelari</li>
+            <li><span class="checklist__tick" aria-hidden="true">✓</span> Clăpari potriviți</li>
+            <li><span class="checklist__tick" aria-hidden="true">✓</span> Schiuri + bețe</li>
+            <li><span class="checklist__tick" aria-hidden="true">✓</span> Geacă/pantaloni impermeabili</li>
+            <li><span class="checklist__tick" aria-hidden="true">✓</span> Straturi termice</li>
+          </ul>
+
+          <div class="actions">
+            <a class="btn btn--primary" href="gear.html">Deschide ghidul de echipament</a>
+            <a class="btn btn--ghost" href="tips.html">Vezi sfaturi & siguranță</a>
+          </div>
+        </div>
+
+        <aside class="card card--soft" aria-label="Schiță SVG">
+          <div class="card__body">
+            <h3>Ski Route</h3>
+
+            <svg class="route" role="img" aria-label="Traseu stilizat pe pârtie" viewBox="0 0 320 180">
+              <defs>
+                <linearGradient id="snow" x1="0" x2="1">
+                  <stop offset="0" stop-color="currentColor" stop-opacity="0.25"></stop>
+                  <stop offset="1" stop-color="currentColor" stop-opacity="0.05"></stop>
+                </linearGradient>
+              </defs>
+              <path d="M15 155 L120 30 L215 95 L305 20 L305 165 Z" fill="url(#snow)"></path>
+              <path d="M30 145 C80 110, 120 90, 155 65 S240 55, 290 30" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"></path>
+              <circle cx="30" cy="145" r="7" fill="currentColor"></circle>
+              <circle cx="155" cy="65" r="7" fill="currentColor"></circle>
+              <circle cx="290" cy="30" r="7" fill="currentColor"></circle>
+            </svg>
+          </div>
+        </aside>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>© <span id="year"></span> WhiteSky</p>
+  <footer class="site-footer">
+    <div class="container footer">
+      <div class="footer__brand">
+        <svg class="icon" aria-hidden="true" focusable="false">
+          <use href="assets/svg/icons.svg#icon-snowflake"></use>
+        </svg>
+        <strong>WhiteSky</strong>
+      </div>
+
+      <nav class="footer__links" aria-label="Linkuri footer">
+        <a href="index.html">Acasă</a>
+        <a href="resorts.html">Stațiuni</a>
+        <a href="gear.html">Echipament</a>
+        <a href="tips.html">Sfaturi</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <p class="footer__meta small muted">
+        © <span id="year">2026</span> WhiteSky
+      </p>
+    </div>
   </footer>
 
   <script src="assets/js/main.js" defer></script>

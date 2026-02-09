@@ -1,1 +1,152 @@
-<!doctype html><html lang='ro'><head><meta charset='utf-8'><title>Sfaturi</title><link rel='stylesheet' href='assets/css/styles.css'></head><body><h1>Sfaturi</h1><script src='assets/js/main.js' defer></script></body></html>
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WhiteSky • Sfaturi & siguranță</title>
+  <meta name="description" content="Sfaturi, siguranță și tehnici de ski. Include video (responsive) + FAQ." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Sari la conținut</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="WhiteSky — acasă">
+        <svg class="icon icon--brand" aria-hidden="true" focusable="false">
+          <use href="assets/svg/icons.svg#icon-snowflake"></use>
+        </svg>
+        <span class="brand__text">
+          <span class="brand__name">WhiteSky</span>
+          <span class="brand__tag">Ski guide</span>
+        </span>
+      </a>
+
+      <nav class="nav__links" aria-label="Navigație principală">
+        <a href="index.html">Acasă</a>
+        <a href="resorts.html">Stațiuni</a>
+        <a href="gear.html">Echipament</a>
+        <a href="tips.html" aria-current="page">Sfaturi</a>
+        <a href="contact.html">Contact</a>
+        <a class="nav__favorites" href="favorites.html">
+          Favorite
+          <span class="badge badge--pill" aria-label="Număr de favorite" data-favorites-count>0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="section">
+    <div class="container">
+      <header class="page-header">
+        <h1>Sfaturi, siguranță & tehnici</h1>
+        <p class="muted">
+          Recomandări practice pentru un ski mai sigur și mai plăcut.
+        </p>
+      </header>
+
+      <section class="grid grid--detail">
+        <article class="card">
+          <div class="card__body">
+            <h2>Video despre tehnici de ski</h2>
+
+            <div class="ratio ratio--16x9" aria-label="Video despre tehnici de ski">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/3qkG7o9b0VQ"
+                title="Ski basics (YouTube)"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+
+          </div>
+        </article>
+
+        <aside class="card card--soft">
+          <div class="card__body">
+            <h2>Reguli rapide (pârtie)</h2>
+            <ul class="list">
+              <li>Controlează viteza și păstrează distanța.</li>
+              <li>Prioritate are schiorul din față.</li>
+              <li>Oprește doar în loc vizibil (nu după “cocoașe”).</li>
+              <li>Verifică vremea și condițiile de zăpadă.</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section__tight">
+        <div class="card">
+          <div class="card__body">
+            <h2>FAQ</h2>
+
+            <div class="faq">
+              <details open class="faq__item">
+                <summary class="faq__summary">Ce schiuri aleg ca începător?</summary>
+                <div class="faq__content">
+                  <p>
+                    Pentru început, schiurile ușor mai scurte și flexibile sunt mai iertătoare.
+                    Închirierea e cea mai bună opțiune la primele ieșiri.
+                  </p>
+                </div>
+              </details>
+
+              <details class="faq__item">
+                <summary class="faq__summary">Cum evit să obosesc rapid?</summary>
+                <div class="faq__content">
+                  <p>
+                    Fă pauze scurte, hidratează-te și lucrează la poziție: genunchi flexați, greutatea
+                    pe mijlocul schiului, privirea înainte.
+                  </p>
+                </div>
+              </details>
+
+              <details class="faq__item">
+                <summary class="faq__summary">Cât de importantă este casca?</summary>
+                <div class="faq__content">
+                  <p>
+                    Este una dintre cele mai importante piese de echipament. Protejează-te chiar și
+                    pe pârtii ușoare, unde apar multe accidente “banale”.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <svg class="icon" aria-hidden="true" focusable="false">
+            <use href="assets/svg/icons.svg#icon-snowflake"></use>
+          </svg>
+          <strong>WhiteSky</strong>
+        </div>
+        <p class="muted small">Sfaturi + video + FAQ.</p>
+      </div>
+
+      <nav class="footer__links" aria-label="Linkuri footer">
+        <a href="index.html">Acasă</a>
+        <a href="resorts.html">Stațiuni</a>
+        <a href="gear.html">Echipament</a>
+      </nav>
+
+      <p class="footer__meta small muted">© <span id="year">2026</span> WhiteSky</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
