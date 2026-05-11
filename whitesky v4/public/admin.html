@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WhiteSky • Admin</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><span class="brand__name">WhiteSky</span></a>
+      <nav class="nav__links">
+        <a href="index.html">Acasă</a>
+        <a href="resorts.html">Stațiuni</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin.html" aria-current="page" data-admin-link>Admin</a>
+        <a href="login.html" data-auth-link>Logare</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="admin-top">
+        <div>
+          <h1>Panou admin</h1>
+          <p class="muted">Gestionează stațiunile și mesajele primite.</p>
+        </div>
+        <button class="btn btn--ghost" id="logout-btn" type="button">Ieșire</button>
+      </div>
+
+      <div id="admin-alert" class="alert hidden"></div>
+
+      <section class="stats">
+        <article class="card stat"><div class="card__body"><span class="muted">Stațiuni</span><br><strong id="stat-resorts">0</strong></div></article>
+        <article class="card stat"><div class="card__body"><span class="muted">Mesaje</span><br><strong id="stat-contacts">0</strong></div></article>
+        <article class="card stat"><div class="card__body"><span class="muted">Rol</span><br><strong>Admin</strong></div></article>
+      </section>
+
+      <section class="grid grid--detail">
+        <article class="card">
+          <div class="card__body">
+            <h2>Adaugă stațiune</h2>
+            <form id="resort-form" class="form">
+              <div class="field"><label>Nume</label><input name="name" required></div>
+              <div class="field"><label>Țară</label><input name="country" required></div>
+              <div class="field"><label>Dificultate</label><select name="difficulty"><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select></div>
+              <div class="field"><label>Altitudine</label><input name="altitude" placeholder="1,200–2,000 m"></div>
+              <div class="field"><label>Pârtii</label><input name="slopes" placeholder="35 km pârtii"></div>
+              <div class="field"><label>Rating</label><input name="rating" type="number" min="1" max="5" step="0.1" value="4.5"></div>
+              <div class="field"><label>Preț</label><select name="price"><option>$</option><option>$$</option><option>$$$</option><option>$$$$</option></select></div>
+              <div class="field"><label>Imagine</label><input name="image" value="assets/img/resort-1.jpg"></div>
+              <div class="field"><label>Descriere</label><textarea name="description" rows="4"></textarea></div>
+              <button class="btn btn--primary" type="submit">Salvează</button>
+            </form>
+          </div>
+        </article>
+
+        <aside class="card card--soft">
+          <div class="card__body">
+            <h2>Mesaje contact</h2>
+            <div id="contacts-list" class="list"></div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section__tight card">
+        <div class="card__body">
+          <h2>Lista stațiunilor</h2>
+          <div class="table-wrap">
+            <table class="admin-table">
+              <thead><tr><th>Nume</th><th>Țară</th><th>Dificultate</th><th>Rating</th><th>Acțiuni</th></tr></thead>
+              <tbody id="admin-resorts-table"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

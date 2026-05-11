@@ -1,0 +1,135 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Administrator",
+      "email": "admin@whitesky.ro",
+      "password": "admin123",
+      "role": "admin",
+      "favorites": []
+    },
+    {
+      "id": 2,
+      "name": "Bogdan",
+      "email": "bogdan@gmail.com",
+      "password": "1234",
+      "role": "user",
+      "favorites": [
+        "alpine-summit",
+        "glacier-bay",
+        "dolomite-drift"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "test",
+      "email": "test@gmail.com",
+      "password": "1234",
+      "role": "user",
+      "favorites": [
+        "alpine-summit",
+        "glacier-bay",
+        "silver-run"
+      ]
+    }
+  ],
+  "contacts": [],
+  "resorts": [
+    {
+      "id": "alpine-summit",
+      "name": "Alpine Summit",
+      "country": "Austria",
+      "difficulty": "Intermediate",
+      "altitude": "1,850–2,900 m",
+      "slopes": "62 km pârtii",
+      "rating": 4.7,
+      "price": "$$$",
+      "image": "assets/img/resort.jpg",
+      "description": "Stațiune modernă pentru schiori cu nivel mediu, cu pârtii lungi și panorame alpine."
+    },
+    {
+      "id": "glacier-bay",
+      "name": "Glacier Bay",
+      "country": "Elveția",
+      "difficulty": "Advanced",
+      "altitude": "2,100–3,200 m",
+      "slopes": "74 km pârtii",
+      "rating": 4.8,
+      "price": "$$$$",
+      "image": "assets/img/glacierbay.jpg",
+      "description": "Zonă montană pentru schiori avansați, cu pârtii rapide și condiții excelente de zăpadă."
+    },
+    {
+      "id": "snowpine-valley",
+      "name": "Snowpine Valley",
+      "country": "România",
+      "difficulty": "Beginner",
+      "altitude": "1,000–1,800 m",
+      "slopes": "28 km pârtii",
+      "rating": 4.3,
+      "price": "$$",
+      "image": "assets/img/resort1.jpg",
+      "description": "Stațiune potrivită pentru începători, cu trasee ușoare și atmosferă relaxată."
+    },
+    {
+      "id": "aurora-ridge",
+      "name": "Aurora Ridge",
+      "country": "Franța",
+      "difficulty": "Intermediate",
+      "altitude": "1,600–2,700 m",
+      "slopes": "55 km pârtii",
+      "rating": 4.6,
+      "price": "$$$",
+      "image": "assets/img/resort4.jpg",
+      "description": "Stațiune echilibrată pentru vacanțe active, cu trasee variate și servicii bune."
+    },
+    {
+      "id": "dolomite-drift",
+      "name": "Dolomite Drift",
+      "country": "Italia",
+      "difficulty": "Advanced",
+      "altitude": "1,700–3,100 m",
+      "slopes": "80 km pârtii",
+      "rating": 4.7,
+      "price": "$$$",
+      "image": "assets/img/resort3.jpg",
+      "description": "Pârtii spectaculoase în zona Dolomiților, recomandate schiorilor cu experiență."
+    },
+    {
+      "id": "bluebird-meadows",
+      "name": "Bluebird Meadows",
+      "country": "Austria",
+      "difficulty": "Beginner",
+      "altitude": "1,200–2,000 m",
+      "slopes": "35 km pârtii",
+      "rating": 4.4,
+      "price": "$$",
+      "image": "assets/img/resort2.jpg",
+      "description": "Loc bun pentru primele lecții de ski, cu zone ușoare și priveliști frumoase."
+    },
+    {
+      "id": "nordic-peak",
+      "name": "Nordic Peak",
+      "country": "Elveția",
+      "difficulty": "Intermediate",
+      "altitude": "1,500–2,600 m",
+      "slopes": "49 km pârtii",
+      "rating": 4.5,
+      "price": "$$$",
+      "image": "assets/img/resort6.jpg",
+      "description": "Stațiune liniștită, cu pârtii prin pădure și trasee pentru nivel mediu."
+    },
+    {
+      "id": "silver-run",
+      "name": "Silver Run",
+      "country": "Franța",
+      "difficulty": "Advanced",
+      "altitude": "2,000–3,000 m",
+      "slopes": "68 km pârtii",
+      "rating": 4.6,
+      "price": "$$$$",
+      "image": "assets/img/resort5.jpg",
+      "description": "Stațiune premium cu pârtii rapide, potrivită pentru schiori avansați."
+    }
+  ]
+}

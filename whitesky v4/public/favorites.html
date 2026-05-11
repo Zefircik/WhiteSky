@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WhiteSky • Favorite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Sari la conținut</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="WhiteSky — acasă">
+        <svg class="icon icon--brand" aria-hidden="true" focusable="false"><use href="assets/svg/icons.svg#icon-snowflake"></use></svg>
+        <span class="brand__text"><span class="brand__name">WhiteSky</span><span class="brand__tag">Ski guide</span></span>
+      </a>
+      <nav class="nav__links" aria-label="Navigație principală">
+        <a href="index.html">Acasă</a>
+        <a href="resorts.html">Stațiuni</a>
+        <a href="gear.html">Echipament</a>
+        <a href="tips.html">Sfaturi</a>
+        <a href="contact.html">Contact</a>
+        <a class="nav__favorites" href="favorites.html" aria-current="page">Favorite <span class="badge badge--pill" data-favorites-count>0</span></a>
+        <a href="login.html" data-auth-link>Logare</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="admin.html" data-admin-link class="hidden">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="section">
+    <div class="container">
+      <header class="page-header">
+        <h1>Favorite</h1>
+        <p class="muted">Aici apar stațiunile salvate. Dacă ești logat, favoritele se salvează în contul tău.</p>
+      </header>
+      <section class="section__tight">
+        <div class="grid grid--cards" id="favorites-grid"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer">
+      <div class="footer__brand">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/svg/icons.svg#icon-snowflake"></use></svg>
+        <strong>WhiteSky</strong>
+      </div>
+      <nav class="footer__links" aria-label="Linkuri footer">
+        <a href="index.html">Acasă</a>
+        <a href="resorts.html">Stațiuni</a>
+        <a href="gear.html">Echipament</a>
+      </nav>
+      <p class="footer__meta small muted">© <span id="year">2026</span> WhiteSky</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
