@@ -1,0 +1,31 @@
+
+.hero { position: relative; min-height: 520px; display: grid; align-items: center; padding: var(--s-9) 0; overflow: hidden; }
+.hero__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: saturate(1.05) contrast(1.05); transform: scale(1.02); }
+.hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(246,249,255,0.92), rgba(246,249,255,0.65)), linear-gradient(180deg, rgba(11,18,32,0.08), transparent 35%); }
+.hero__content { position: relative; z-index: 1; max-width: 70ch; }
+.hero h1 { margin: 0 0 var(--s-3); font-size: clamp(2rem, 3.2vw, 3rem); line-height: 1.05; }
+.lead { margin: 0 0 var(--s-5); font-size: 1.12rem; color: rgba(11,18,32,0.82); }
+.hero__actions { display: flex; flex-wrap: wrap; gap: var(--s-3); }
+.hero__meta { list-style: none; padding: 0; margin: var(--s-6) 0 0; display: flex; flex-wrap: wrap; gap: var(--s-3); }
+.animated-title {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid #2563eb;
+  width: 0;
+  animation: typing 3s steps(32, end) forwards, cursor 0.7s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}

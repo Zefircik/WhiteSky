@@ -1,0 +1,106 @@
+
+.card { background: var(--surface); border: 1px solid rgba(215,227,246,0.95); border-radius: var(--radius); box-shadow: var(--shadow-sm); overflow: hidden; }
+.card--soft { background: rgba(255,255,255,0.65); }
+.card__img { width: 100%; height: 190px; object-fit: cover; background: var(--surface-2); }
+.card__body { padding: var(--s-5); }
+.card__top { display: flex; align-items: center; justify-content: space-between; gap: var(--s-3); margin-bottom: var(--s-2); }
+.card__title { margin: 0; font-size: 1.15rem; }
+.card__actions { display: flex; flex-wrap: wrap; gap: var(--s-3); margin-top: var(--s-4); }
+.list { margin: 0; padding-left: 18px; color: rgba(11,18,32,0.85); }
+.list li { margin: 8px 0; }
+.checklist { list-style: none; padding: 0; margin: var(--s-5) 0 0; display: grid; gap: var(--s-2); }
+.checklist__tick { display: inline-flex; width: 1.4em; height: 1.4em; align-items: center; justify-content: center; border-radius: 999px; background: rgba(22,163,74,0.12); border: 1px solid rgba(22,163,74,0.25); color: #166534; margin-right: 10px; }
+.callout { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--s-4); background: rgba(255,255,255,0.65); border: 1px solid rgba(215,227,246,0.95); border-radius: var(--radius); padding: var(--s-6); box-shadow: var(--shadow-sm); }
+.filters__grid { display: grid; gap: var(--s-4); grid-template-columns: 1fr; }
+@media (min-width: 840px) { .filters__grid { grid-template-columns: 1.3fr 1fr 1fr 1fr; align-items: end; } }
+.field { display: grid; gap: 8px; }
+.field label { font-weight: 700; }
+.hint { margin: 0; color: var(--muted); font-size: 0.9rem; }
+input, select, textarea { font: inherit; padding: 10px 12px; border-radius: 12px; border: 1px solid rgba(215,227,246,0.95); background: rgba(255,255,255,0.9); color: var(--text); box-shadow: inset 0 1px 0 rgba(11,18,32,0.03); }
+textarea { resize: vertical; min-height: 140px; }
+.req { color: var(--warn); font-weight: 800; }
+.form__status { min-height: 1.2em; }
+.alert { padding: 12px 14px; border-radius: 12px; border: 1px solid var(--border); background: rgba(255,255,255,0.75); }
+.alert--success { background: rgba(22,163,74,0.10); border-color: rgba(22,163,74,0.25); color: #166534; }
+.alert--error { background: rgba(220,38,38,0.10); border-color: rgba(220,38,38,0.25); color: #991b1b; }
+.ratio { position: relative; width: 100%; border-radius: var(--radius-sm); overflow: hidden; background: rgba(11,18,32,0.06); border: 1px solid rgba(215,227,246,0.95); }
+.ratio--16x9 { aspect-ratio: 16 / 9; }
+.ratio iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.faq { display: grid; gap: var(--s-3); margin-top: var(--s-4); }
+.faq__item { border: 1px solid rgba(215,227,246,0.95); border-radius: 12px; background: rgba(255,255,255,0.8); padding: 0 var(--s-3); }
+.faq__summary { cursor: pointer; font-weight: 800; padding: var(--s-3) 0; }
+.faq__content { padding: 0 0 var(--s-3); color: rgba(11,18,32,0.85); }
+.todo { list-style: none; padding: 0; margin: var(--s-4) 0 0; display: grid; gap: 10px; }
+.todo input { margin-right: 10px; }
+.route { width: 100%; height: auto; color: var(--primary-2); }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 12px; border-bottom: 1px solid var(--border); }
+th { color: var(--muted); font-size: .9rem; }
+.card {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.card:hover {
+  transform: scale(1.04);
+  border-color: #2563eb;
+  box-shadow:
+    0 10px 25px rgba(37, 99, 235, 0.25),
+    0 0 15px rgba(37, 99, 235, 0.15);
+}
+
+.card__img {
+  transition: transform 0.4s ease;
+}
+
+.card:hover .card__img {
+  transform: scale(1.08);
+}
+.alpine-img,
+.glacier-img,
+.snowpine-img,
+.aurora-img,
+.dolomite-img,
+.bluebird-img,
+.nordic-img,
+.silver-img {
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.alpine-img {
+  background-image: url("/assets/img/alpine.jpg");
+}
+
+.glacier-img {
+  background-image: url("/assets/img/glacierbay.jpg");
+}
+
+.snowpine-img {
+  background-image: url("/assets/img/snowpine.jpg");
+}
+
+.aurora-img {
+  background-image: url("/assets/img/aurora.jpg");
+}
+
+.dolomite-img {
+  background-image: url("/assets/img/dolomite.jpg");
+}
+
+.bluebird-img {
+  background-image: url("/assets/img/bluebird.jpg");
+}
+
+.nordic-img {
+  background-image: url("/assets/img/nordic.jpg");
+}
+
+.silver-img {
+  background-image: url("/assets/img/silver.jpg");
+}

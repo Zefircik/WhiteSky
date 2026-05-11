@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="icon-snowflake" viewBox="0 0 24 24"><path fill="currentColor" d="M11 2h2v5.17l2.24-2.24 1.42 1.42L13 10h5.17l-2.24-2.24 1.42-1.42L22 11v2h-5.17l2.24 2.24-1.42 1.42L14 13h-2v2l3.66 3.66-1.42 1.42L12 17.83V23h-2v-5.17l-2.24 2.25-1.42-1.42L10 15v-2H8l-3.66 3.66-1.42-1.42L5.17 13H0v-2h5.17L2.92 8.76l1.42-1.42L8 11h2v-1L6.34 6.34l1.42-1.42L10 7.17V2z"/></symbol>
+  <symbol id="icon-mountain" viewBox="0 0 24 24"><path fill="currentColor" d="M2 20 9.5 5l4 7L16 8l6 12H2zm7.7-5.5 1.3-2.6 1.2 2.1 1-1.6-3.6-6.3L4.4 18h15.2L16 10.8 13.4 15l-2-3.5-1.7 3z"/></symbol>
+  <symbol id="icon-route" viewBox="0 0 24 24"><path fill="currentColor" d="M6 3a3 3 0 0 0-1 5.83V17a3 3 0 1 0 2 0V8.83A3 3 0 0 0 6 3zm0 2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm0 14a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm12-4a3 3 0 1 0-1-5.83V7a2 2 0 0 0-2-2h-4v2h4v2.17A3 3 0 0 0 18 15zm0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></symbol>
+</svg>

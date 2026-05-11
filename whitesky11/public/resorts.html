@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WhiteSky • Stațiuni</title>
+  <meta name="description" content="Catalog de stațiuni/pârtii de ski: cards, dificultate, țară." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Sari la conținut</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="WhiteSky — acasă">
+        <svg class="icon icon--brand" aria-hidden="true" focusable="false">
+          <use href="assets/svg/icons.svg#icon-snowflake"></use>
+        </svg>
+
+        <span class="brand__text">
+          <span class="brand__name">WhiteSky</span>
+          <span class="brand__tag">Ski guide</span>
+        </span>
+      </a>
+
+      <nav class="nav__links" aria-label="Navigație principală">
+        <a href="index.html">Acasă</a>
+        <a href="resorts.html" aria-current="page">Stațiuni</a>
+        <a href="gear.html">Echipament</a>
+        <a href="tips.html">Sfaturi</a>
+        <a href="contact.html">Contact</a>
+
+        <a class="nav__favorites" href="favorites.html">
+          Favorite
+          <span class="badge badge--pill" aria-label="Număr de favorite" data-favorites-count>0</span>
+        </a>
+
+        <a href="login.html" data-auth-link>Logare</a>
+        <a href="admin.html" data-admin-link class="hidden">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="section">
+    <div class="container">
+
+      <header class="page-header">
+        <h1>Stațiuni & pârtii</h1>
+
+        <p class="muted">
+          Descoperă stațiuni populare și alege nivelul potrivit de dificultate.
+        </p>
+      </header>
+
+      <section class="filters card card--soft" aria-label="Căutare, filtre și sortare">
+        <div class="card__body">
+
+          <form class="filters__grid" action="#" method="get">
+
+            <div class="field">
+              <label for="q">Căutare</label>
+
+              <input
+                id="q"
+                name="q"
+                type="search"
+                placeholder="Ex: Alpine, Austria..."
+                autocomplete="off"
+              />
+
+              <p class="hint">Caută după nume sau țară.</p>
+            </div>
+
+            <div class="field">
+              <label for="country">Țară</label>
+
+              <select id="country" name="country">
+                <option value="">Toate</option>
+                <option value="Austria">Austria</option>
+                <option value="France">Franța</option>
+                <option value="Italy">Italia</option>
+                <option value="Romania">România</option>
+                <option value="Switzerland">Elveția</option>
+              </select>
+
+              <p class="hint">Alege o țară din listă.</p>
+            </div>
+
+            <div class="field">
+              <label for="difficulty">Dificultate</label>
+
+              <select id="difficulty" name="difficulty">
+                <option value="">Toate</option>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+              </select>
+
+              <p class="hint">Alege nivelul de dificultate.</p>
+            </div>
+
+            <div class="field">
+              <label for="sort">Sortare</label>
+
+              <select id="sort" name="sort">
+                <option value="rating">Rating (desc)</option>
+                <option value="az">A → Z</option>
+              </select>
+
+              <p class="hint">Sortează lista pentru a găsi mai ușor.</p>
+            </div>
+
+          </form>
+        </div>
+      </section>
+
+      <section class="section__tight" aria-label="Lista stațiuni">
+        <div class="grid grid--cards" id="resorts-grid">
+          <p class="muted">Se încarcă stațiunile...</p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer">
+
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <svg class="icon" aria-hidden="true" focusable="false">
+            <use href="assets/svg/icons.svg#icon-snowflake"></use>
+          </svg>
+
+          <strong>WhiteSky</strong>
+        </div>
+
+        <p class="muted small">
+          Explorează stațiunile și salvează-le pe cele care îți plac.
+        </p>
+      </div>
+
+      <nav class="footer__links" aria-label="Linkuri footer">
+        <a href="index.html">Acasă</a>
+        <a href="gear.html">Echipament</a>
+        <a href="tips.html">Sfaturi</a>
+        <a href="contact.html">Contact</a>
+        <a href="favorites.html">Favorite</a>
+      </nav>
+
+      <p class="footer__meta small muted">
+        © <span id="year">2026</span> WhiteSky
+      </p>
+
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
