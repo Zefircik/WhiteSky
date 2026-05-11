@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WhiteSky • Sign Up</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><span class="brand__name">WhiteSky</span></a>
+      <nav class="nav__links">
+        <a href="index.html">Acasă</a>
+        <a href="resorts.html">Stațiuni</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" data-auth-link>Logare</a>
+        <a href="signup.html" aria-current="page">Sign Up</a>
+        <a href="admin.html" data-admin-link class="hidden">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="auth-layout">
+    <section class="card auth-card">
+      <div class="card__body">
+        <h1>Sign Up</h1>
+        <p class="muted">Creează un cont nou pentru site-ul WhiteSky.</p>
+
+        <form id="signup-form" class="form">
+          <div class="field">
+            <label for="name">Nume</label>
+            <input id="name" name="name" type="text" placeholder="Ex: Andrei" autocomplete="name" required />
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="nume@exemplu.com" autocomplete="email" required />
+          </div>
+
+          <div class="field">
+            <label for="password">Parolă</label>
+            <input id="password" name="password" type="password" placeholder="Minimum 4 caractere" autocomplete="new-password" required />
+          </div>
+
+          <div id="signup-status" class="form__status hidden"></div>
+
+          <button class="btn btn--primary" type="submit">Creează cont</button>
+        </form>
+
+        <p class="muted small">Ai deja cont? <a href="login.html">Intră în cont</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

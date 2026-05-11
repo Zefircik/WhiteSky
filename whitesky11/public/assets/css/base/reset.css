@@ -1,0 +1,18 @@
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--text);
+  background: radial-gradient(1200px 500px at 20% -10%, rgba(14,165,233,0.18), transparent 60%), radial-gradient(1200px 500px at 80% -10%, rgba(37,99,235,0.14), transparent 55%), var(--bg);
+  line-height: 1.55;
+}
+img { max-width: 100%; display: block; }
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace; background: rgba(37,99,235,0.08); padding: 0 6px; border-radius: 6px; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.skip-link { position: absolute; left: -999px; top: 12px; background: var(--surface); border: 1px solid var(--border); padding: 10px 12px; border-radius: 10px; box-shadow: var(--shadow-sm); z-index: 9999; }
+.skip-link:focus { left: 12px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn { transition: none; } .btn--primary:hover, .btn--ghost:hover { transform: none; } }

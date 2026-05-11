@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WhiteSky • Logare</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><span class="brand__name">WhiteSky</span></a>
+      <nav class="nav__links">
+        <a href="index.html">Acasă</a>
+        <a href="resorts.html">Stațiuni</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" aria-current="page" data-auth-link>Logare</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="admin.html" data-admin-link class="hidden">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="auth-layout">
+    <section class="card auth-card">
+      <div class="card__body">
+        <h1>Logare</h1>
+        <p class="muted">Intră în contul tău. Dacă ești admin, vei fi redirecționat către panoul de administrare.</p>
+        <form id="login-form" class="form">
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" value="admin@whitesky.ro" required />
+          </div>
+          <div class="field">
+            <label for="password">Parolă</label>
+            <input id="password" name="password" type="password" value="admin123" required />
+          </div>
+          <div id="login-status" class="form__status hidden"></div>
+          <button class="btn btn--primary" type="submit">Intră în cont</button>
+        </form>
+        <p class="muted small">Date admin: admin@whitesky.ro / admin123</p>
+        <p class="muted small">Nu ai cont? <a href="signup.html">Creează cont aici</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
